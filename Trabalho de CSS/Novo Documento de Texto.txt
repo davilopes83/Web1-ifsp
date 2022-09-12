@@ -1,0 +1,9 @@
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+    td{
+        padding: 30px 60px;
+        text-align: center;
+    }
+</style>
