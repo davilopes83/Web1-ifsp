@@ -5,59 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando3</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <style>
+    table, th, td {
+        border: 1px solid red; 
+        text-align: center; 
+    }
+
+    #verde {
+        background-color: green;
+}
+
+    #amarelo {
+        background-color: yellow;
+}
+
+    #vermelho {
+        background-color: red;
+}
+  
+    #azul {
+        background-color: blue;
+}
+    
     .tabela1 td {
-        padding: 30px 60px;
-        text-align: center;
+        padding: 30px 60px; 
     }
-   table, th, td {
-        border: 1px solid red;
-    }
+    
 </style>
 
 <body>
-    <h1>Praticando 6</h1>
-
-    <h4><button><a href="index.html">menu inicial</a></button></h4>
-
-    <h4>Tabela grande com colspan e rowspan e planos de fundo</h4>
-        <table class="tabela1">
-            <tr>
-                <td colspan="2">Colspan</td>
-                <td>-</td>
-                <td rowspan="3" >Rowspan</td>
-            </tr>
-            <tr>
-                <td>-<td>-<td>-</td>
-            </tr>
-            <tr>
-                <td>-</td>
-                <td colspan="2">Colspan</td>
-            </tr>
-            <tr>
-                <td>-<td>-<td>-<td>-</td>
-            </tr>
-
-        </table>
-        <table>
-            <thead>
-                <caption>legenda</caption> 
     
+    <h1>Praticando 6 - Tabela grande com colspan e rowspan e planos de fundo</h1>
+            
+        <h4><button><a href="index.html">menu inicial</a></button></h4>
+        
+        <table class="tabela1">
+            <thead>   
+                <caption>Tabela grande com colspan e rowspan</caption>
             </thead>
             <tr>
-                <td>Linha1<td>------<td>green</td>
+                <td id="verde" colspan="2">Colspan</td>
+                <td id="verde">-</td>
+                <td id="verde"rowspan="3" >Rowspan</td>
             </tr>
             <tr>
-                <td>Linha2<td>------<td>red</td>
+                <td id="vermelho">-<td id="vermelho">-<td id="vermelho">-</td>
             </tr>
             <tr>
-                <td>Linha3<td>------<td>blue</td>
+                <td id="azul">-</td>
+                <td id="azul"colspan="2">Colspan</td>
             </tr>
             <tr>
-                <td>Linha4<td>------<td>yellow</td>
+                <td id="amarelo">-<td id="amarelo">-<td id="amarelo">-<td id="amarelo">-</td>
             </tr>
-            
+        </table>
+        <table class="tabela2">
+            <thead>
+                <h4><caption>legenda</caption></h4>     
+            </thead>
+            <tr>
+                <td>Linha1<td id="verde">---------<td>green</td>
+            </tr>
+            <tr>
+                <td>Linha2<td id="vermelho">---------<td>red</td>
+            </tr>
+            <tr>
+                <td>Linha3<td id="azul">---------<td>blue</td>
+            </tr>
+            <tr>
+                <td>Linha4<td id="amarelo">---------<td>yellow</td>
+            </tr>  
         </table>
 </body>
 
